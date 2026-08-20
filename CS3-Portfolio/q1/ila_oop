@@ -8,10 +8,10 @@
 ## Sari-Sari Store Inventory System
 
 ### 1. Encapsulation
-Your explanation here.
+The list named, Product, contains the items data and actions that can be available to private and public use. Private properties, such as the price, Quantity, and productID, will be kept to avoid external code from accidentally being corrupted. This ensures that the system maintains data integrity and efficiency.
 
 ### 2. Abstraction
-Your explanation here.
+Abstraction hides the complex operations and only shows the essential details. The system can provide a simple sellOrder() method for cashier to check the order of a customer. But, behind the function, this singular methox can update stock, calculate change, and logs the transaction. This allows thw interface to be simplified for the sake of the customer's eyes.
 
 ### 3. Inheritance
 Your explanation here.
