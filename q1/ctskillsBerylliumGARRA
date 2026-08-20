@@ -1,0 +1,117 @@
+#**Name:** Nadine
+#**Section:** Berryllium
+#**Last Name:** Garra
+#**Date Accomplished:** 08/20/26
+
+#Scenario: A
+
+#**Step 1: Identify the Big Problem**
+#Main Problem: Waiting for food in the PSHS school canteen is often time-consuming and inefficient.
+
+#**Step 2: Identify three to four Sub-Problems:**
+#1. Students often take a long time to decide their orders.
+#2. Item stocks are not updated, leading to unavailability or insufficient items.
+#3. Inaccurate calculation of bills can lead to delays and errors.
+
+
+#**Step 3: For Each Sub-Problem, Apply CT skills: **
+"""
+First Sub-Problem:
+Decomposition: Check the menu, take the order, confirm the order
+Pattern Recognition: The process is similar to true-false scenarios, where the system checks if the order is valid or not.
+Abstraction: Ignore the unnecessary details of external factors--like a customer's mood etc.-- and focus on the steps of ordering
+Algorithm Design: 
+Initialize variables for orders, item_name = [item, price, quantity]
+create loop that checks if the order is valid, and prompts for more items if valid.
+"""
+"""
+///Second Sub-Problem:
+Decomposition: Know current stock, check availability, update stock
+Pattern Recognition: The variables can be put in a list to keep track.
+Abstraction: Ignore other menu items and focus on ordered items. 
+Algorithm Design:
+Initializes the current stock of items, in item_name
+per order, check the availability and quantity of the item
+in each order, update the stock of the item by subtracting the ordered quantity
+"""
+"""
+///Third Sub-Problem:
+Decomposition: Calculate total price, handle payment
+Pattern Recognition: The price is just addition with appending prices.
+Abstraction: Ignore discounts and focus on total price calculations.
+Algorithm Design:
+Initialize a list to store the prices of the ordered items
+in a loop, append the price of each ordered item to the list
+in total_price, sum the prices in the list and print the final price.
+"""
+
+
+#**Step 4: Draw a flowchart or pseudocode for the identified Sub-Problems:**
+# For the First sub problem:
+"""
+As the customer checks the menu, they are met with essential details only. (to hasten the process of ordering and avoid distractions)
+Customer is asked for their order
+Customer = input("Order:")
+It is then checked if the order is valid
+
+While true
+    If customer in system:
+        print("Item is available.")
+        /// and is prompted for more items
+        input("Would you like to order more?: [y/n]")
+        /// if yes, the process repeats, if no, the order is confirmed
+            if input == "n":
+                print("Order confirmed.")
+                the statement is changed to false and the loop ends
+            Else:
+                print("Order more items.")
+"""
+
+
+# For the Second sub problem:
+"""
+   // Prior to ordering for any new customer, the SYSTEM automatically has the list of items and their CURRENT quantities and price
+Item_name = [item, price, quantity]
+  // when a customer orders an item, the system checks the item's availability
+customer = input("Order: ")
+
+def check_stock(): #checks item availability
+    if customer in system:
+        print("Item is available.")
+    else:
+        print("Item is not available.")
+
+def update_stock(): #updates the stock of an itemby subtracting the ordered item
+    if Item_name == "Item is available.":
+        Item_name.remove(customer)
+        Item_name[2] = Item_name[2] - 1
+        If Item_name[2] == 0:
+            print("Item is out of stock.")
+    else:
+        print("Item not available.")
+       
+stock = check_stock(customer)
+
+
+"""
+
+
+# For the Third sub problem:
+"""
+Items are stored in a list with their corresponding prices.
+As stated in the second sub problem, it's written as Item_name = [item, price, quantity]
+
+While the cashier adds the items, the second element of the list is used to calculate the total price
+customer_order = []
+customer_order.append(item_name[1]) #adds the price of the item to the order list
+
+In a loop, where the customer is constantly asked if they wish to add more items, the list becomes larger
+
+total_price = 0
+total_price = sum(customer_order)
+
+print("Total price:", total_price)
+"""
+
+
+
