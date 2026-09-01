@@ -18,7 +18,7 @@
 |  Update    | Updates the current version of the game into a newer one. |
 |  Uninstall | The removal of the game from the device altogether. |
 ## Class Diagram
-![Class Diagram](images/classDiagram_Garra.png)
+[Class Diagram](images/objectDiagram_Garra)
 ## Design Explanation
 ### Why did you choose this class?
 --I am interested in video games. Out of every topic I thought to pick, it stood out to me as I like talking about it. Things discussing video games are very broad and vast, so making a class for even a singular aspect of it could have a hundred different methods and properties. Because of this, it was easy to answer.
