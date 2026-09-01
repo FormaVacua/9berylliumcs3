@@ -15,7 +15,7 @@
 
 |  Download  | The installation of the game into the device. |
 |  Load      | Booting up the program allow the user to enter the game. |
-|  Update    | Updates the current version of the game into a newer one. |
+|  Update    | Updates the current version of the game into a newer one. The parameters in the diagram describe the base game or current version of the game, and the available update that can be attached.|
 |  Uninstall | The removal of the game from the device altogether. |
 ## Class Diagram
 [Class Diagram](images/objectDiagram_Garra.png)
