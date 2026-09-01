@@ -1,0 +1,28 @@
+# SG4 - Understanding Classes and Objects
+## Class Name
+## Class Description
+## Properties
+| Property | Data Type | Description |
+|---|---|---|
+|  Name:     | String | The name of the video game. |
+|  Genre:    | String | The kind of content expected in the video game. This includes the specific, unique style that makes the game fit into archetypes or, stand out. |
+|  Company:  | String | The creators of the game. |
+|  Player    | String | |
+|  Audience: | String | The playerbase that the video game caters to entertain. It is primarily based on demographics and doesn't usually stereotype players but reflects the ones who enjoy it most. It is not to be confused with the gender of players. It is based with age groups. |
+## Methods
+| Method | Description |
+|---|---|| | |
+
+|  Download  | The installation of the game into the device. |
+|  Load      | Booting up the program allow the user to enter the game. |
+|  Update    | Updates the current version of the game into a newer one. |
+|  Uninstall | The removal of the game from the device altogether. |
+## Class Diagram
+![Class Diagram](images/classDiagram_Garra.png)
+## Design Explanation
+### Why did you choose this class?
+--I am interested in video games. Out of every topic I thought to pick, it stood out to me as I like talking about it. Things discussing video games are very broad and vast, so making a class for even a singular aspect of it could have a hundred different methods and properties. Because of this, it was easy to answer.
+### Which property is the most important? Why?
+--It is the 'Genre' from the available properties. It defines what makes the video game special to an audience's interests. Because of this interest, people can select what kind of games they wish to play.
+### Which method is the most useful? Why?
+--Out of the methods, the 'Load' method is the most useful. A user doesn't continuously delete, update, or uninstall a game. The load method will be used every time the game is in need of use.
