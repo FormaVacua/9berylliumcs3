@@ -8,12 +8,12 @@
 # Quarter 1
 ## Activities
 ### Computational Thinking Skills
-[View my Computational Thinking Exercise](CS3-Portfolio/q1/ctskillsBerylliumGARRA.md)
+[View my Computational Thinking Exercise](q1/ctskillsBerylliumGARRA)
 ### Chinese Zodiac
-[View my Chinese Zodiac Activity](CS3-Portfolio/q1/ctskillsBerylliumGARRA.md)
+[View my Chinese Zodiac Activity](q1/ctskillsBerylliumGARRA)
 ### OOP ILA
-[View my OOP ILA](CS3-Portfolio/q1/ila_oop.md)
+[View my OOP ILA](q1/ila_oop)
 ### classObjectUML
-[View my OOPact](q1/classObjectUML.md)
+[View my OOPact](q1/classObjectUML)
 
 
