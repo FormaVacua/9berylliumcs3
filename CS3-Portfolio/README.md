@@ -14,6 +14,6 @@
 ### OOP ILA
 [View my OOP ILA](CS3-Portfolio/q1/ila_oop.md)
 ### classObjectUML
-[View my OOPact](CS3-Portfolio/q1/classObjectUML.md)
+[View my OOPact](q1/classObjectUML.md)
 
 
