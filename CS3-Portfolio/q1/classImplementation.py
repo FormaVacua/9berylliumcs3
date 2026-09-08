@@ -4,7 +4,7 @@ class VideoGames:
         GameName.Genre = Genre
         GameName.__Debug = Debug
         GameName.Company = Company
-        GameName.Player = PlayerAu
+        GameName.Audience = PlayerAu
         GameName.DLoad = DLoad
         GameName.Update = Update
         GameName.UnStall = UnStall
