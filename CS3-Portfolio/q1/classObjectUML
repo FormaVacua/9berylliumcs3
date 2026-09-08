@@ -26,3 +26,32 @@
 --It is the 'Genre' from the available properties. It defines what makes the video game special to an audience's interests. Because of this interest, people can select what kind of games they wish to play.
 ### Which method is the most useful? Why?
 --Out of the methods, the 'Load' method is the most useful. A user doesn't continuously delete, update, or uninstall a game. The load method will be used every time the game is in need of use.
+
+
+## Design Revisions
+### -- Added private attribute 'Debug Screen'
+### -- Added parameters for method 'Update' to 'Update(BaseGame. VersionUpdate)'
+### -- Clarified 'Game' attribute to 'Game Name'
+
+| Attribute | Data Type | Visibility | Why Visibility? |
+| Game Name:| String    | Public     | The game must be available for display to users.
+|   Genre:  | String    | Public     | The genre should be public so that users know what kind of game they will play.
+|   Company:| String    | Public     | Knowing the creators can serve
+|   Player: |           | Public     | Understand what kind of people play the game.
+|  Audience | String    |            | 
+|   Debug   |           |            |
+|  Screen  :| String    | Private    | Crash reports or big lines of code should not be visible or vulnerable to players.
+
+## Updated UML
+|                Video Games                  |
++--------------------------------------------+
+| + Game : String                             |
+| + Genre : String                            |
+| + Company : String                          |
+| + Player Audience : String                  |
+| - Debug Screen : String
++--------------------------------------------+
+| + Download()                                |
+| + Update(BaseGame : VersionUpdate)          |
+| + Load()                                    |
+| + Uninstall()                               |
