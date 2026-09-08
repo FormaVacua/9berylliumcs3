@@ -34,6 +34,7 @@
 ### -- Clarified 'Game' attribute to 'Game Name'
 
 | Attribute | Data Type | Visibility | Why Visibility? |
+|---|---|---|
 | Game Name:| String    | Public     | The game must be available for display to users.
 |   Genre:  | String    | Public     | The genre should be public so that users know what kind of game they will play.
 |   Company:| String    | Public     | Knowing the creators can serve
@@ -44,6 +45,7 @@
 
 ## Updated UML
 |                Video Games                  |
+|---|
 +--------------------------------------------+
 | + Game : String                             |
 | + Genre : String                            |
