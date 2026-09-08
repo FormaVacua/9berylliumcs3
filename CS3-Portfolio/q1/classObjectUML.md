@@ -11,8 +11,7 @@
 |  Audience: | String | The playerbase that the video game caters to entertain. It is primarily based on demographics and doesn't usually stereotype players but reflects the ones who enjoy it most. It is not to be confused with the gender of players. It is based with age groups. |
 ## Methods
 | Method | Description |
-|---|---|| | |
-
+|---|---|
 |  Download  | The installation of the game into the device. |
 |  Load      | Booting up the program allow the user to enter the game. |
 |  Update    | Updates the current version of the game into a newer one. The parameters in the diagram describe the base game or current version of the game, and the available update that can be attached.|
@@ -34,7 +33,7 @@
 ### -- Clarified 'Game' attribute to 'Game Name'
 
 | Attribute | Data Type | Visibility | Why Visibility? |
-|---|---|---|
+|---|---|---|---|
 | Game Name:| String    | Public     | The game must be available for display to users.
 |   Genre:  | String    | Public     | The genre should be public so that users know what kind of game they will play.
 |   Company:| String    | Public     | Knowing the creators can serve
