@@ -22,7 +22,7 @@ class VideoGames:
 
 
 obj_1 = VideoGames("Hollow Knight: Silksong", "Action-Adventure", "Team Cherry", "Everyone", True, True, True, "1.13.0", True, False)
-obj_2 = VideoGames("Tomodachi Life: Living the Dream", "Simulation", "Lauren Montgomery and co.", "Teen", False, True, True, "1.0.0", True, False)
+obj_2 = VideoGames("Tomodachi Life: Living the Dream", "Simulation", "Nintendo", "Teen", False, True, True, "1.0.0", True, False)
 
 print(obj_1)
 print(obj_2)
