@@ -1,29 +1,34 @@
 class VideoGames:
-    def __init__(GameName, Genre, Company, PlayerAu, Debug, Load, DLoad, Update, UnStall, Stall):
-        GameName.Name = GameName
-        GameName.Genre = Genre
-        GameName.__Debug = Debug
-        GameName.Company = Company
-        GameName.Audience = PlayerAu
-        GameName.DLoad = DLoad
-        GameName.Update = Update
-        GameName.UnStall = UnStall
+    # Changed first argument to 'self' to avoid overwriting input arguments
+    def __init__(self, GameName, Genre, Company, PlayerAu, Debug, Load, DLoad, Update, UnStall, Stall):
+        self.Name = GameName
+        self.Genre = Genre
+        self.__Debug = Debug  # Private attribute
+        self.Company = Company
+        self.Audience = PlayerAu
+        self.DLoad = DLoad
+        self.Update = Update
+        self.UnStall = UnStall
         
-    def load(GameName):
-        print(f"Loading {GameName.Name}...")
-    def update(GameName, Update):
-        GameName.new_update = Update
-        print(f"Updating {GameName.Name} to version {Update}...")
-        print(f"Version:{Update}, patchnotes: {}")
-    def uninstall(GameName):
-        print(f"Uninstalling {GameName.Name}...")
-    def debug(GameName):
-        if GameName.__Debug:
-            print(f"Debugging {GameName.Name}...")
+    def load(self):
+        print(f"Loading {self.Name}...")
+        
+    def update(self, Update):
+        self.Update = Update  # Updates the existing version attribute
+        print(f"Updating {self.Name} to version {Update}...")
+        print(f"Version: {Update}, patchnotes: None Provided") # Fixed empty curly braces
+        
+    def uninstall(self):
+        print(f"Uninstalling {self.Name}...")
+        
+    def debug(self):
+        if self.__Debug:
+            print(f"Debugging {self.Name}...")
         else:
-            print(f"{GameName.Name} debug screen off.")
-    def __str__(GameName):
-        return f"Game: {GameName.Name} | Genre: {GameName.Genre} | Company: {GameName.Company} |"
+            print(f"{self.Name} debug screen off.")
+            
+    def __str__(self):
+        return f"Game: {self.Name} | Genre: {self.Genre} | Company: {self.Company} |"
 
 
 obj_1 = VideoGames("Hollow Knight: Silksong", "Action-Adventure", "Team Cherry", "Everyone", True, True, True, "1.13.0", True, False)
@@ -32,13 +37,12 @@ obj_2 = VideoGames("Tomodachi Life: Living the Dream", "Simulation", "Nintendo",
 print(obj_1)
 print(obj_2)
 
-print("TESTING")
+print("\n--- TESTING ---")
 
-update(obj_1,"2.0")
+obj_1.update("2.0")
 
-print("Object state after update on object 1:")
-
-print(f"Object 1: {obj_1.name} | Version: {obj_1.Update}")
+print("Object state after update on object ")
+print(f"Object 1: {obj_1.Name} | Version: {obj_1.Update}")
 
 ## Analysis - 
 ### Why did you make your chosen attribute private?
