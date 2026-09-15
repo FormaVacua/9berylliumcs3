@@ -1,5 +1,4 @@
 class VideoGames:
-    # Changed first argument to 'self' to avoid overwriting input arguments
     def __init__(self, GameName, Genre, Company, PlayerAu, Debug, Load, DLoad, Update, UnStall, Stall):
         self.Name = GameName
         self.Genre = Genre
