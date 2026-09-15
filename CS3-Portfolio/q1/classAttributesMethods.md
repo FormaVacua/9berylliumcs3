@@ -7,10 +7,10 @@ Describe any changes made to your original class.
 ## Visibility Decisions
 | Attribute | Data Type | Visibility | Reason |
 |---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+| Name | String | Public | |
+| Genre | String | | |
+| Company | String | | |
+| Player Audience | String | | |
 ## Updated UML Class Diagram
 ![Class Diagram](images/classDiagramSG5.png)
 ## Python Implementation
