@@ -1,31 +1,33 @@
 class VideoGames:
-    def __init__(self, GameName, Genre, Company, PlayerAu, Debug, Load, DLoad, Update, UnStall, Stall):
+    def __init__(self, GameName, Genre, Company, PlayerAu, Debug, Load, DLoad, Version, UnStall, Stall):
         self.Name = GameName
         self.Genre = Genre
         self.__Debug = Debug  # Private attribute
         self.Company = Company
         self.Audience = PlayerAu
+        self.Load = Load
         self.DLoad = DLoad
-        self.Update = Update
+        self.Version = Version
         self.UnStall = UnStall
-        
+        self.Stall = Stall
+
     def load(self):
         print(f"Loading {self.Name}...")
-        
+
     def update(self, Update):
-        self.Update = Update  # Updates the existing version attribute
-        print(f"Updating {self.Name} to version {Update}...")
-        print(f"Version: {Update}, patchnotes: None Provided") # Fixed empty curly braces
-        
+        self.Version = Update
+        print(f"Updating {self.Name} to version {self.Version}...")
+        print(f"Version: {self.Version}, patchnotes: None Provided")
+
     def uninstall(self):
         print(f"Uninstalling {self.Name}...")
-        
+
     def debug(self):
         if self.__Debug:
             print(f"Debugging {self.Name}...")
         else:
             print(f"{self.Name} debug screen off.")
-            
+
     def __str__(self):
         return f"Game: {self.Name} | Genre: {self.Genre} | Company: {self.Company} |"
 
