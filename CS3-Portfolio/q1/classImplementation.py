@@ -29,8 +29,8 @@ class VideoGames:
     def __str__(self):
         return f"Game: {self.Name} | Genre: {self.Genre} | Company: {self.Company} |"
 
-obj_1 = VideoGames("Hollow Knight: Silksong", "Action-Adventure", "Team Cherry", "Everyone", True, "1.13.0") 
-obj_2 = VideoGames("Tomodachi Life: Living the Dream", "Simulation", "Nintendo", "Teen", False, "1.0.0")
+obj_1 = VideoGames("Hollow Knight: Silksong", "Action-Adventure", "Team Cherry", "Everyone", False, True, True, "1.13.0", False, True) 
+obj_2 = VideoGames("Tomodachi Life: Living the Dream", "Simulation", "Nintendo", "Teen", False, True, True, "1.0.0", False, True)
 
 print(obj_1)
 print(obj_2)
