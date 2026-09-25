@@ -13,13 +13,13 @@ Describe any changes made to your original class.
 | Player Audience | String | Public | This allows players to get to know their demographic |
 | Debug | String | Private | A player doesn't need to see the lines of code that may disrupt their game. |
 ## Updated UML Class Diagram
-![Class Diagram](q1/images/classDiagramSG5.png)
+![Class Diagram](q1/images/classDiagramSG5.jpg)
 ## Python Implementation
 ![View Python Source](q1/classImplementation.py)
 ## Test Run
 ![Test Run](q1/images/classTestRun.png)
 ## Object Diagram
-![Object Diagram](q1/images/objectDiagram.png)
+![Object Diagram](q1/images/objectDiagram(1).jpg)
 
 ## Analysis - 
 ### Why did you make your chosen attribute private? 
