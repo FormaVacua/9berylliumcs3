@@ -31,31 +31,13 @@ class VideoGames:
 
 
 class Characters:
-  def __init__(self, Name, Equipment, Role, Race, Inventory, Abilities, UseInventory):
+  def __init__(self, Name, Role, Race, Abilities):
     self.character = Name
-    self.abilities_default = [["RC"],["ES"],["EQ"]]
     self.abilities = Abilities
     self.race = Race
-    self.stats_default = [["HP: ", 100], ["ATK: ", 15], ["DEF: ", 30], ["MANA: ", 10]]
-    self.equipment = Equipment
     self.role = Role
-    Invetory = [[],[],[],[]]
-    self.inventory = Inventory
+    Inventory = []
     
     def Abilities(self):
-      skill = int(input(" Use a skill. | 1-RC | 2-ES | 3-EQ |"))
-      if skill == 1:
-        self.stats_default = self.stats_default([]) - 5
-      print("Used torrent. Super effective.")
-    def UseInvetory(self, Inventory):
-      option = int(input("| Storage 1 | Weapon 2 | Food 3 | Buffers 4 |"))
-      if len(invetory([0],[1],[2],[3])) ==! 0:
-        if option == 1:
-          use = input("Use Storage")
-        if option == 2:
-          use = input("Use Weapon")
-        if option == 3:
-          use = input("Use Food")
-        if option == 4:
-          use = input("Use buff")
-  
+      skill = int(input(f" Use a skill. {self.abilities}"))
+        print(f"Used {self.abilities[skill-1]}. Super effective.")
