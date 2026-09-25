@@ -59,15 +59,3 @@ class Characters:
         if option == 4:
           use = input("Use buff")
   
-obj_1 = VideoGames("Hollow Knight: Silksong", "Action-Adventure", "Team Cherry", "Everyone", True, True, True, "1.13.0", True, False)
-obj_2 = VideoGames("Tomodachi Life: Living the Dream", "Simulation", "Nintendo", "Teen", False, True, True, "1.0.0", True, False)
-
-print(obj_1)
-print(obj_2)
-
-print("\n--- TESTING ---")
-
-obj_1.update("2.0")
-
-print("Object state after update on object ")
-print(f"Object 1: {obj_1.Name} | Version: {obj_1.Update}")
