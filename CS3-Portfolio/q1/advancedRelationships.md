@@ -11,8 +11,8 @@ Explanation: Entities in the game concern status of the character. This includes
 ## Inheritance UML
 ![Inheritance](images/inheritanceDiagram.png)
 ## Composition/Aggregation
-Relationship: Composition
-Explanation: The characters must be created within the parent class. This makes it so that when the parent class is deleted, the characters will follow the same way. This makes the character class dependent on the existence of the parent class that way the data stored stays in the Video Game object.
+Relationship: Aggregation
+Explanation: The characters were created independently from the game class. This ensures the existence of the characters even if game data is erased. 
 ## Advanced UML Diagram
 ![Advanced UML](images/advancedClassDiagram.png)
 ## Python Implementation
@@ -23,4 +23,4 @@ Explanation: The characters must be created within the parent class. This makes 
 ![Objects](images/advancedObjectDiagram.png)
 
 ## Reflection
-Answers:
+Answers: This activity alone was very time-consuming, but, in a way, as much as it was frustrating, it was enjoyable seeing lines of code slowly stitching together. The classes I chose for this activity were certainly bigger than what I could handle but, I managed to find some doable parts even though it sometimes defies video game knowledge. 
