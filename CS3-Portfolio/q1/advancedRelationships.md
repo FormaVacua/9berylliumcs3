@@ -5,9 +5,9 @@
 ## Existing System Description: 
 As of prior to creating this activity, the system has the "main" class, Video Games, where many Characters are stored. The Video Game class contains general information regarding the game's genre, target audience and creators, as well as what operations initiate it. In the Character class, general information of the character's identity is stored too. Attributes such as the character's name, role and species, and abilities.
 ## Inheritance Relationship
-Parent: Video Games
+Parent: Entity
 Child: Characters
-Explanation: The Video Game class owns the characters.
+Explanation: Entities in the game concern status of the character. This includes the character's HP, EXP, and how much damage they respectively receive.
 ## Inheritance UML
 ![Inheritance](images/inheritanceDiagram.png)
 ## Composition/Aggregation
