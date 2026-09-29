@@ -2,6 +2,7 @@
 
 ## Previous Work
 [Part I - Classes and Objects](classObjectUML.md)
+
 [Part II - Class Attributes and Methods](classAttributesMethods.md)
 
 ## Existing Class
@@ -35,5 +36,8 @@ Explanation: In a video game, there can be more than just a player or protagonis
 ### What multiplicity did you choose and why?
 - I picked a 'one-to-many'. A video game can have hundreds of characters if it wished. In story-telling video games, this creates a richer atmosphere; where characters can interact and build each other's identities. A video game with only one character would feel lonely--if it were the goal.
 ### How did you implement the relationship in Python?
+- By instantiating the objects independently first and creating an association in the code later on.
 ### Why did you store an object reference instead of copying its data?
+- It preserves object-oriented values like polymorphism. In turn, it saves memory and creates synchronism for both systems.
 ### If your relationship uses many, why is a list appropriate?
+- The list enumerates the objects in a single variable in a chronological manner. This behaviour allows the information in the list to be easily managed and accessed as it's based off when it was inserted.
