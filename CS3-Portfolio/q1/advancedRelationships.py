@@ -18,8 +18,20 @@ class VideoGames:
     def update(self, Update):
         self.Version = Update
         print(f"Updating {self.Name} to version {self.Version}...")
-        print(f"")
+        print(f"Version: {self.Version}, patchnotes: None Provided")
 
+    def uninstall(self):
+        print(f"Uninstalling {self.Name}...")
+
+    def debug(self):
+        if self.__Debug:
+            print(f"Debugging {self.Name}...")
+        else:
+            print(f"{self.Name} debug screen off.")
+
+    def __str__(self):
+        return f"Game: {self.Name} | Genre: {self.Genre} | Company: {self.Company} |"
+        
     def characters(self, character_add):
         self.ACTcharacters.append(character_add)
         print(f"{character_add.name} has been associated with {self.Name}.")
@@ -33,7 +45,6 @@ class VideoGames:
 
 
 class Entity:
-    """The Parent Class containing inheritable systems (Combat & Level Progression)."""
     def __init__(self, Name, MaxHP):
         self.name = Name
         self.hp = MaxHP
@@ -96,7 +107,7 @@ class Characters(Entity):
             print("Please enter a valid number.")
 
 
-# Execution ---
+# Execution 
 
 # Characters are born separately from the game
 char1 = Characters("Seltzer", "Rogue", "Galra", ["Stealth"], MaxHP=100)
