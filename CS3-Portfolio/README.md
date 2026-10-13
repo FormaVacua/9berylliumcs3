@@ -22,4 +22,10 @@
 ### OOP4
 [View my OOP-IV](q1/advancedRelationships)
 
+---
+# Quarter 2
+## Activities
+
+### Encapsulation Activity
+[View my Encapsulation Activity](q2/sg8_encapsulation)
 
