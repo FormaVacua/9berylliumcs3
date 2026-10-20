@@ -69,8 +69,8 @@ pub1.display_info() #prints the author, and title
 
 print("\nBook Information:") #information on the literature
 book1.display_info() #prints the book details. author, title, and number of pages
-print(book1.get_number_of_pages()) #prints the number of pages
+print(book1.get_number_of_pages) #prints the number of pages
 
 print("\nMagazine Information:") 
 mag1.display_info() #prints the magazine details. the author, title and issue number
-print(mag1.get_issue_number()) #prints just the issue number
+print(mag1.get_issue_number) #prints just the issue number
