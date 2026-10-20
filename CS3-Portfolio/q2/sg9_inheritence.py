@@ -5,7 +5,7 @@ class Publication:
 
   @property
   def get_title(self):
-    return self.__title
+    return f"{self.__title}"
 
   @get_title.setter
   def set_title(self, new_title):
@@ -13,14 +13,14 @@ class Publication:
 
   @property
   def get_author(self):
-    return self.__author
+    return f"{self.__author}"
     
   @get_author.setter
   def set_author(self, new_author):
     self.__author = new_author
     
   def display_info(self):
-    print(f"Author: {self.__author} || Title: {self.__title}")
+    print(f"Author: {self.get_author} || Title: {self.get_title}")
 
 ##
 class Book(Publication):
@@ -30,14 +30,14 @@ class Book(Publication):
     
   @property
   def get_number_of_pages(self):
-    return self.__number_of_pages
+    return f"{self.__number_of_pages}"
     
   @get_number_of_pages.setter
   def set_number_of_pages(self, new_number_of_pages):
     self.__number_of_pages = new_number_of_pages
     
   def display_info(self):
-    print(f"Author: {self.author} | Title: {self.title} | Number of Pages: {self.number_of_pages}")
+    print(f"Author: {self.get_author} | Title: {self.get_title} | Number of Pages: {self.__number_of_pages}")
 
 ##
 class Magazine(Publication):
@@ -47,12 +47,14 @@ class Magazine(Publication):
 
   @property
   def get_issue_number(self):
-    return self.__issue_number
+    return f"{self.__issue_number}"
     
   @get_issue_number.setter
   def set_issue_number(self, new_issue_number):
     self.__issue_number = new_issue_number
-
+  
+  def display_info(self):
+    print(f"Author: {self.get_author} | Title: {self.get_title} | Issue Number: {self.__issue_number}")
 
 pub1 = Publication("Wanderer's Journal","Ellina the Chronicller")
 book1 = Book("Book 1", "Bill Cipher", 320)
@@ -62,10 +64,10 @@ print("Publication Information: ")
 pub1.display_info()
 
 print("\nBook Information:")
-book1.set_number_of_pages(-310) #fix this later
-book1.display_info() ##fix this
+book1.set_number_of_pages(-310) 
+book1.display_info() 
 book1.get_number_of_pages()
 
 print("\nMagazine Information:")
-mag1.display_info() #fix
+mag1.display_info() 
 mag1.get_number_of_pages()
