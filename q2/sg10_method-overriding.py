@@ -12,11 +12,11 @@ class Lion(Animal): #  Lion subclass
     super().__init__(name)
     #methods
   def eat(self):
-    print(f"{self.name} eats fresh meat")
+    print(f"{self.name} eats fresh meat") #differnt for each animal
   def make_sound(self):
     print(f"{self.name} roars loudly!")
 
-class Elephant(Animal):
+class Elephant(Animal): #elephant subclass
   def __init__(self,name):
     super().__init__(name)
     #methods
@@ -25,7 +25,7 @@ class Elephant(Animal):
   def make_sound(self):
     print(f"{self.name} trumpets!")
 
-class Monkey(Animal):
+class Monkey(Animal): #monkey subclass
   def __init__(self,name):
     super().__init__(name)
     #methods
