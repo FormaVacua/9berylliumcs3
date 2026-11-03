@@ -1,7 +1,7 @@
 # Computer Science 3 Portfolio
 ## Student Information
 **Name:** Nadine D. Garra
-**Section:** Magnesium
+**Section:** Beryllium
 **School Year:** 2026-2027
 
 ---
